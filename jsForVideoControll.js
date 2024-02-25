@@ -8,6 +8,7 @@ const forwardButton = document.getElementById('forward');
 const backwardButton = document.getElementById('backward');
 const videoProgress = document.getElementById('videoProgress');
 
+
         playButton.addEventListener('click', () => {
             if (video.paused) {
                 video.play();
