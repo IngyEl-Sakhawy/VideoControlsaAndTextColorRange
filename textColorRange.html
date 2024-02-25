@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">RED</label>
+    <input type="range" id="red" min="0" max="255" step="1" value="50" ></input>
+    <label for="">Green</label>
+    <input type="range" id="green" min="0" max="255" step="1" value="50" ></input>
+    <label for="">Blue</label>
+    <input type="range" id="blue" min="0" max="255" step="1" value="50" ></input>
+    <h3 id="text">This is a simple text !</h3>
+    
+    <script>
+        const redrange=document.getElementById('red');
+        const bluerange=document.getElementById('blue');
+        const greenrange=document.getElementById('green');
+        const text=document.getElementById('text');
+
+redrange.addEventListener('input', () => {
+            const red = parseInt(redrange.value);
+            const green = parseInt(greenrange.value);
+            const blue = parseInt(bluerange.value);
+            const combinedColor = `rgb(${red}, ${green}, ${blue})`;
+            text.style.color = combinedColor;
+});
+
+greenrange.addEventListener('input', () => {
+            const red = parseInt(redrange.value);
+            const green = parseInt(greenrange.value);
+            const blue = parseInt(bluerange.value);
+            const combinedColor = `rgb(${red}, ${green}, ${blue})`;
+            text.style.color = combinedColor;
+});
+
+bluerange.addEventListener('input', () => {
+            const red = parseInt(redrange.value);
+            const green = parseInt(greenrange.value);
+            const blue = parseInt(bluerange.value);
+            const combinedColor = `rgb(${red}, ${green}, ${blue})`;
+            text.style.color = combinedColor;
+});
+    </script>
+</body>
+</html>

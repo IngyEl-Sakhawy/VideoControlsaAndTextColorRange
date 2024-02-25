@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <video src="video.mp4" id="video" height="300px" width="400px"></video>
+    <div data-controls="">
+        <button id="play">Play/Pause</button>
+        <button id="mute">Mute/Unmute</button>
+        <button id="rewind">Rewind</button>
+        <button id="fullScreen">FullScreen</button>
+        <progress id="videoProgress" value="0" max="100"></progress>
+        <label >Speed</label>
+        <input type="range" id="speed" name="speed" min="0.5" max="2" step="0.1" value="" ></input>
+        <button id="backward">Backward</button>
+        <button id="forward">Forward</button>
+    </div>
+    <script src="jsOfFile.js"></script>
+</body>
+</html>
