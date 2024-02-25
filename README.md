@@ -21,7 +21,7 @@ This HTML file demonstrates basic video controls implemented in JavaScript. It i
 ## Files
 
 - `videoControlls.html`: HTML file containing the video element and control buttons.
-- `jsOForVideoControll.js`: JavaScript file containing the logic for video control.
+- `jsForVideoControll.js`: JavaScript file containing the logic for video control.
 
 
 # Text Color Range in HTML
